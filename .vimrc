@@ -27,7 +27,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('davidhalter/jedi-vim')
   endif
 
-  " go plugins
+  " vim-go
   if !has('vim-go')
     call dein#add('fatih/vim-go')
   endif
