@@ -27,6 +27,17 @@ if dein#load_state('~/.cache/dein')
     call dein#add('davidhalter/jedi-vim')
   endif
 
+  " go plugins
+  if !has('vim-go')
+    call dein#add('fatih/vim-go')
+  endif
+
+  " vim-clang
+  if !has('vim-clang')
+    call dein#add('justmao945/vim-clang')
+  endif
+
+
 
   " Required:
   call dein#end()
@@ -95,6 +106,8 @@ else
     set clipboard& clipboard+=unnamed
 endif
 
+set fileformats=unix
+set fileencodings=utf-8
 
 
 " ============
